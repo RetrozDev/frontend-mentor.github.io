@@ -11,4 +11,4 @@ In this repository you can see some challenges from [Frontend Mentor](https://ww
 | Advanced | :star2: :star2: :star2: :star2: |
 | Guru | :star2: :star2: :star2: :star2: :star2: |
 
-### [Click here to see website](index.html)
+### [Click here to see website](https://retrozdev.github.io/frontend-mentor.github.io/)
