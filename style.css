@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --Background: #282a36;
+    --CurrentLine: #44475a;
+    --Foreground: #f8f8f2;
+    --Comment: #6272a4;
+    --Cyan: #8be9fd;
+    --Green: #50fa7b;
+    --Orange: #ffb86c;
+    --Pink: #ff79c6;
+    --Purple: #bd93f9;
+    --Red: #ff5555;
+    --Yellow: #f1fa8c;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh; 
+    background-color: var(--Background);
+    font-family: 'Roboto', sans-serif;
+}
+
+p::selection {
+    background-color: var(--Pink);
+    color: var(--Background);
+}
+
+h1::selection {
+    background-color: var(--Pink);
+    color: var(--Background);
+}
+
+header {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+header h1 {
+    color: var(--Foreground);
+    text-align: center;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 80vh; 
+}
+main a{
+    text-decoration: none;
+}
+
+main button {
+    height: 20vh;
+    width: 40vw; 
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Purple);
+    border-radius: 10px;
+    color: var(--Background);
+    font-size: 1rem;
+    border: none;
+    transition: all 330ms ease-in-out;
+}
+
+main button:hover {
+    background-color: var(--Background);
+    border: var(--Purple) solid;
+    color: var(--Purple);
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    color: var(--Foreground);
+}
+
+footer a {
+    color: var(--Foreground);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--Purple);
+}
+
+
+@media screen and (max-width: 600px) {
+    main button {
+        width: 80vw; 
+    }
+}
